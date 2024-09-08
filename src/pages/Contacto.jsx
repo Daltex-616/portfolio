@@ -57,7 +57,7 @@ export const Contacto = () => {
             <label>Apellido
               <input
                 type="text" 
-                name="user_name" 
+                name="user_lastname" 
                 value={formData.user_lastname} 
                 onChange={handleChange} 
                 required
