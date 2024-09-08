@@ -9,6 +9,12 @@ header {
 	color: #fff;
     position: relative;
     z-index: 100;
+	padding: 15px 0;
+    animation: header-movement both;
+    animation-timeline: scroll();
+    position: sticky;
+    top: 0;
+    animation-range: 10px 100px;
 }
 H3{
     margin-left: 15px;
@@ -50,7 +56,15 @@ nav {
 		visibility: visible;
 		opacity: 1;
 	}
-
+	header {
+        animation: mobile-header-movement both;
+        animation-timeline: scroll();
+        animation-range: 10px 100px;
+    }
+	header .nav-btn {
+        padding: 10px; /* Ajustes adicionales específicos para móviles */
+    }
+	
 	header nav {
 		position: fixed;
 		top: -100vh;
@@ -62,7 +76,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: inherit;
+		background-color: #060606;
 		transition: 1s;
 	}
 
@@ -79,4 +93,28 @@ nav {
 	nav a {
 		font-size: 1.5rem;
 	}
+}
+@keyframes header-movement{
+    form{
+        padding: 20px 0;
+        
+        
+    }
+    to{
+        padding: 0;
+        background-color: #10163266;
+       
+    }
+}
+@keyframes mobile-header-movement {
+    from {
+        padding: 20px 0;
+       
+        color: #fff;
+    }
+    to {
+        padding: 10px 0;
+        background-color: #10163266;
+        
+    }
 }

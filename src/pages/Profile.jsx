@@ -1,6 +1,8 @@
 import React from "react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 import "../public/profile.css";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 export const Profile = () => {
   return (
@@ -11,14 +13,19 @@ export const Profile = () => {
             <img
               className="profile__img"
               src="https://pbs.twimg.com/profile_images/1717245025505914880/hmTsV_yO_400x400.jpg"
-              alt=""/>
+              alt=""
+            />
           </div>
           <div className="profile__data-container">
             <div className="profile__data">
               <div className="profile__description">
                 <h1 className="profile__title">Federico Zamora</h1>
                 <Typewriter
-                  words={["Web Developer","Sofware Developer","Roba queso cremoso"]}
+                  words={[
+                    "Web Developer",
+                    "Sofware Developer",
+                    "Roba queso cremoso",
+                  ]}
                   loop={0}
                   cursor
                   cursorStyle="_"
@@ -27,12 +34,25 @@ export const Profile = () => {
                   delaySpeed={1000}
                 />
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Harum, nesciunt accusamus natus tempore fugit magni dolor,
-                  necessitatibus optio eaque voluptatem, inventore temporibus.
-                  Odit tempore, voluptate sunt molestiae exercitationem ex
-                  animi.
+                  Como programador junior Full Stack, poseo habilidades en el
+                  desarrollo tanto del frontend como del backend, permitiéndome
+                  abordar proyectos desde una perspectiva integral. Aunque estoy
+                  en el inicio de mi carrera, tengo una sólida base en lenguajes
+                  como JavaScript, HTML, CSS, y he trabajado con frameworks
+                  populares como React para el frontend y Node.js para el
+                  backend. Estoy comprometido con el aprendizaje continuo, la
+                  mejora de mis habilidades y la colaboración en equipo para
+                  entregar soluciones de software eficientes y bien
+                  estructuradas.
                 </p>
+                <div className="porfile__icon">
+                  <a href="https://www.linkedin.com/in/federiconzamora-/" target="_blank">
+                    <FaLinkedinIn className="profile__icon-icon" />
+                  </a>
+                  <a href="https://github.com/Daltex-616" target="_blank">
+                    <FaGitAlt className="profile__icon-icon" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

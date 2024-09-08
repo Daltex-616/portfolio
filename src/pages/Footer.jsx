@@ -1,7 +1,8 @@
 import React from 'react'
+import "../public/footer.css"
 
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer> <strong>Daltex</strong> daltex</footer>
   )
 }

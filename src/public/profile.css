@@ -3,6 +3,7 @@
     container-name: profile;
     container-type: inline-size;
     background-color: #0F0F0F;
+    animation: aparecer 2.4s -.3s both;
 }
 
 .profile__wrapper{
@@ -11,6 +12,21 @@
     justify-content: center;
     background-color: #0F0F0F;
     max-width: 1200px;
+}
+.porfile__icon{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px; /* Ajusta este valor según sea necesario */
+    margin: 0 auto;
+}
+.profile__icon-icon{
+    font-size: 24px; /* Tamaño de los iconos */
+    color: #05FCE9;     /* Color de los iconos */
+}
+.profile__icon-icon:hover{
+    box-shadow: 0px 0px 40px #05FCE9;
 }
 
 .profile__data-container{
@@ -75,5 +91,14 @@ span{
         object-fit: cover;
         width: 560px;
         
+    }
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
     }
 }

@@ -10,6 +10,9 @@
     margin: 70px auto;
     width: 80%; /* Cambiado a width: 100% para ocupar todo el ancho */
     height: 100%;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 20% contain 40% ;
 }
 .skills__skills-title{
     text-align: center;
