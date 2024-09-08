@@ -1,0 +1,62 @@
+
+.portafolio{
+    background-color: #0F0F0F;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    container-name: portafolio;
+    container-type: inline-size;
+    justify-content: space-evenly;
+    
+}
+.portafolio__title{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.portafolio__project-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    min-height: 80vh;
+}
+.portafolio__project{
+    background-image: linear-gradient(#0009,#0009), url("https://pbs.twimg.com/profile_banners/1717243622746099712/1718768137/1500x500");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    border-radius: 8px;
+
+}
+.portafolio__project:hover{
+    opacity: 0.74;
+    outline: 2px solid #fff6;
+}
+@container portafolio (min-width:900px){
+    .portafolio__project-container{
+        grid-template-columns: repeat(auto-fill,minmax(420px,1fr));
+    }
+    .portafolio__project:first-child{
+        grid-column: span 2;
+    }
+    .portafolio__project:nth-child(6){
+        grid-column: span 2;
+    }
+}
+@container portafolio (min-width:1300px){
+    .portafolio__project-container{
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+    .portafolio__project:first-child{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .portafolio__project:nth-child(6){
+        grid-column: span 4;
+    }
+}
