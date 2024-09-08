@@ -18,7 +18,7 @@ export const Profile = () => {
               <div className="profile__description">
                 <h1 className="profile__title">Federico Zamora</h1>
                 <Typewriter
-                  words={["Web Developer"]}
+                  words={["Web Developer","Sofware Developer","Roba queso cremoso"]}
                   loop={0}
                   cursor
                   cursorStyle="_"
