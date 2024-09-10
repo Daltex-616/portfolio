@@ -6,16 +6,15 @@ import { Portafolio } from './pages/Portafolio'
 import { Contacto } from './pages/Contacto'
 import { Footer } from './pages/Footer'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
       <>
       <Navbar/>
-      <Profile/>
-      <Skills/>
-      <Portafolio/>
-      <Contacto/>
-      <Footer/>
+      <Profile name="profile"/>
+      <Skills name="skills"/>
+      <Portafolio name="portafolio"/>
+      <Contacto  />
+      <Footer />
       </>
   )
 }

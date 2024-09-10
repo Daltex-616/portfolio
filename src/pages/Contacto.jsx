@@ -38,9 +38,10 @@ export const Contacto = () => {
   };
 
   return (
+  
     <>
       <section className='form'>
-        <h2 className='form__title'>Contacto</h2>
+        <h2 className='form__title' name="Contacto" > Contacto</h2>
         <form className='form__form' onSubmit={handleSubmit}>
           <div className='form__input-container'>
             <label>Nombre

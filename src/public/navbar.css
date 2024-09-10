@@ -21,6 +21,9 @@ header {
 	text-decoration: none;
 	color: #fff;
 }
+a{
+	cursor: pointer;
+}
 nav a {
 	margin: 0 1rem;
 	color: #fff;
