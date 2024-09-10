@@ -20,6 +20,7 @@ header {
 	list-style: none;
 	text-decoration: none;
 	color: #fff;
+	font-weight: 600;
 }
 a{
 	cursor: pointer;
