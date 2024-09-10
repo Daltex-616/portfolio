@@ -25,7 +25,6 @@ export const Profile = () => {
                   words={[
                     "Web Developer",
                     "Sofware Developer",
-                    "Roba queso cremoso",
                   ]}
                   loop={0}
                   cursor
