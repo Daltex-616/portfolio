@@ -3,6 +3,7 @@ import { Typewriter, Cursor } from "react-simple-typewriter";
 import "../public/profile.css";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+import profileimg from "../assets/profileimg.jpg"
 
 export const Profile = () => {
   return (
@@ -12,7 +13,7 @@ export const Profile = () => {
           <div className="profile__img-container">
             <img
               className="profile__img"
-              src="https://pbs.twimg.com/profile_images/1717245025505914880/hmTsV_yO_400x400.jpg"
+              src={profileimg}
               alt=""
             />
           </div>

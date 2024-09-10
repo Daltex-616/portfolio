@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <header>
-      <h3>DALTEX</h3>
+      <a href="" className="nav__title">DALTEX</a>
       <nav className={isNavOpen ? "responsive_nav" : "nav__nav"}>
         <a href="/#">Home</a>
         <a href="/#">portafolio</a>

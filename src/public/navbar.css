@@ -16,9 +16,10 @@ header {
     top: 0;
     animation-range: 10px 100px;
 }
-H3{
-    margin-left: 15px;
-    text-shadow: 0px 0px 15px #fff5;
+.nav__title{
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
 }
 nav a {
 	margin: 0 1rem;
