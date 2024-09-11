@@ -16,10 +16,10 @@ export const Navbar = () => {
       <Link classID="nav__title" to="profile" activeClass="active" spy={true} smooth={true} offset={0} duration={500}>DALTEX</Link>
     
       <nav className={isNavOpen ? "responsive_nav" : "nav__nav"}>
-        <Link to="profile" spy={true} smooth={true} offset={-50} duration={500}>Home</Link>
-        <Link to="skills" spy={true} smooth={true} offset={-40} duration={500}>Skills</Link>
-        <Link to="portafolio" spy={true} smooth={true} offset={0} duration={500}>Portafolio</Link>
-        <Link to="Contacto" spy={true} smooth={true} offset={200} duration={500}>Contacto</Link>
+        <Link to="profile" spy={true} smooth={true} offset={-50} duration={500} onClick={toggleNavbar}>Home</Link>
+        <Link to="skills" spy={true} smooth={true} offset={-40} duration={500} onClick={toggleNavbar}>Skills</Link>
+        <Link to="portafolio" spy={true} smooth={true} offset={0} duration={500} onClick={toggleNavbar}>Portafolio</Link>
+        <Link to="Contacto" spy={true} smooth={true} offset={200} duration={500} onClick={toggleNavbar}>Contacto</Link>
 
 
         <button className="nav-btn nav-close-btn" onClick={toggleNavbar}>
