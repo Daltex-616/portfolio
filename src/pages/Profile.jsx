@@ -1,8 +1,8 @@
 import React from "react";
-import { Typewriter, Cursor } from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
 import "../public/profile.css";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import profileimg from "../assets/profileimg.jpg"
 
 export const Profile = () => {
@@ -50,7 +50,7 @@ export const Profile = () => {
                     <FaLinkedinIn className="profile__icon-icon" />
                   </a>
                   <a href="https://github.com/Daltex-616" target="_blank">
-                    <FaGitAlt className="profile__icon-icon" />
+                    <FaGithub className="profile__icon-icon" />
                   </a>
                 </div>
               </div>
