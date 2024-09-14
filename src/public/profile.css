@@ -18,12 +18,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px; /* Ajusta este valor según sea necesario */
+    width: 200px;
     margin: 0 auto;
 }
 .profile__icon-icon{
-    font-size: 24px; /* Tamaño de los iconos */
-    color: #05FCE9;     /* Color de los iconos */
+    font-size: 24px; 
+    color: #05FCE9;    
 }
 .profile__icon-icon:hover{
     box-shadow: 0px 0px 40px #05FCE9;
@@ -34,8 +34,8 @@
     padding: 20px;
 }
 .profile__img-container{
-    margin-top: 15px;
-    max-height: 500px;
+    margin: 30px 50px;
+    max-height: 300px;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0px 0px 55px #fff5;
