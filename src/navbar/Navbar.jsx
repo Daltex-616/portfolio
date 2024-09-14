@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   return (
     <header>
-      <Link classID="nav__title" to="profile" activeClass="active" spy={true} smooth={true} offset={0} duration={500}>DALTEX</Link>
+      <Link className="nav__title" to="profile" activeClass="active" spy={true} smooth={true} offset={0} duration={500}>DALTEX</Link>
     
       <nav className={isNavOpen ? "responsive_nav" : "nav__nav"}>
         <Link to="profile" spy={true} smooth={true} offset={-50} duration={1000} onClick={toggleNavbar}>Home</Link>
