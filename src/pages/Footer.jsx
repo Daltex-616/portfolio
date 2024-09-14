@@ -11,16 +11,10 @@ export const Footer = () => {
           <p>Construyendo soluciones a medida</p>
         </div>
         <div className="footer-socials">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <FaFacebook />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/federiconzamora-/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Daltex-616" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
         </div>
