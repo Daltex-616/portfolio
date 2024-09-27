@@ -1,14 +1,17 @@
 import React from "react";
 import "../public/portafolio.css";
+import { NavLink } from "react-router-dom";
 export const Portafolio = () => {
   return (
     <>
       <section className="portafolio">
         <h2 className="portafolio__title">Portafolio</h2>
         <div className="portafolio__project-container">
-          <a href="" className="portafolio__project">
+          <NavLink className="portafolio__project" to="/UniDep">
+
             <h2 className="portafolio__project-name">UniDep</h2>
-          </a>
+          </NavLink>
+       
           <a href="https://digimonquiz.onrender.com/" target="_blank" className="portafolio__project">
             <h2 className="portafolio__project-name">Digimon Quiz</h2>
           </a>
