@@ -1,22 +1,25 @@
 import React from "react";
 import Navbarlitterl from "../../navbar/Navbarlitterl";
-import "../../public/profile.css";
-
+import "../portfolio/portafolio.css";
 import imgproject from "../../assets/project_1.png";
+import { Footer } from "../../pages/Footer";
+import { NavLink } from "react-router-dom";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const UniDep = () => {
   return (
     <>
       <Navbarlitterl />
-      <main className="profile">
-        <h1 className="profile__title">UniDep</h1>
-        <div className="profile__wrapper">
-          <div className="profile__img-container">
-            <img className="profile__img" src={imgproject} alt="" />
+      <main className="profile-page">
+        <h1 className="profile-page__title">UniDep</h1>
+        <div className="profile-page__wrapper">
+          <div className="profile-page__img-container">
+            <img className="profile-page__img" src={imgproject} alt="" />
           </div>
-          <div className="profile__data-container">
-            <div className="profile__data">
-              <div className="profile__description">
+          <div className="profile-page__data-container">
+            <div className="profile-page__data">
+              <div className="profile-page__description">
                 <p>
                   Como programador junior Full Stack, poseo habilidades en el
                   desarrollo tanto del frontend como del backend, permitiéndome
@@ -29,18 +32,27 @@ const UniDep = () => {
                   entregar soluciones de software eficientes y bien
                   estructuradas.
                 </p>
-                <div className="porfile__icon">
-                  <a
-                    href="https://www.linkedin.com/in/federiconzamora-/"
-                    target="_blank"
-                  ></a>
-                  <a href="https://github.com/Daltex-616" target="_blank"></a>
+                <ul>
+                  <li>tecnologias</li>
+                </ul>
+                <div className="porfile-page__icon">
+                  <NavLink to="/">
+                    <FaArrowAltCircleLeft className="profile__icon-icon" />
+                    <span className="portafolio-page__span">Volver</span>
+                  </NavLink>
+                  <NavLink to="https://unidep.onrender.com/" target="_blanck">
+                    <FaArrowAltCircleRight className="profile-page__icon-icon" />
+                    <span className="portafolio-page__span">
+                      Ir al proyecto
+                    </span>
+                  </NavLink>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };
