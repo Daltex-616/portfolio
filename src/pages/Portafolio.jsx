@@ -13,7 +13,6 @@ export const Portafolio = () => {
           <NavLink className="portafolio__project" to="/DigimonQuiz">
             <h2 className="portafolio__project-name">Digimon Quiz</h2>
           </NavLink>
-          
           <a
             href="https://github.com/Daltex-616/backend-pilar-tecno"
             target="_blank"

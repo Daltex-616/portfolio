@@ -5,7 +5,7 @@ import imgproject from "../../assets/project_1.png";
 import { Footer } from "../../pages/Footer";
 import { NavLink } from "react-router-dom";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowAltCircleRight,FaGithub } from "react-icons/fa";
 
 const UniDep = () => {
   return (
@@ -20,30 +20,42 @@ const UniDep = () => {
           <div className="profile-page__data-container">
             <div className="profile-page__data">
               <div className="profile-page__description">
+                <h2>Descripcion:</h2>
                 <p>
-                  Como programador junior Full Stack, poseo habilidades en el
-                  desarrollo tanto del frontend como del backend, permitiéndome
-                  abordar proyectos desde una perspectiva integral. Aunque estoy
-                  en el inicio de mi carrera, tengo una sólida base en lenguajes
-                  como JavaScript, HTML, CSS, y he trabajado con frameworks
-                  populares como React para el frontend y Node.js para el
-                  backend. Estoy comprometido con el aprendizaje continuo, la
-                  mejora de mis habilidades y la colaboración en equipo para
-                  entregar soluciones de software eficientes y bien
-                  estructuradas.
+                  Unidep es una plataforma web integral que proporciona
+                  información completa sobre los deportes universitarios
+                  disponibles en la provincia. A través de esta aplicación, los
+                  usuarios pueden explorar una amplia variedad de disciplinas
+                  deportivas, conocer los requisitos específicos para participar
+                  en cada una, y obtener detalles actualizados sobre los
+                  calendarios y eventos deportivos. Además, Unidep ofrece mapas
+                  interactivos que facilitan la ubicación precisa de las
+                  instalaciones deportivas, lo que permite a los estudiantes y
+                  deportistas acceder de manera rápida y sencilla a los lugares
+                  donde se llevan a cabo las actividades. La aplicación busca
+                  promover la participación en el ámbito deportivo
+                  universitario, fomentando un estilo de vida activo y saludable
+                  entre los estudiantes.
                 </p>
+                <h3>Tecnologias utilizadas:</h3>
                 <ul>
-                  <li>tecnologias</li>
+                  <li>JavaScriot</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Boostrap</li>
                 </ul>
                 <div className="porfile-page__icon">
                   <NavLink to="/">
                     <FaArrowAltCircleLeft className="profile__icon-icon" />
                     <span className="portafolio-page__span">Volver</span>
                   </NavLink>
+                  <NavLink to="https://github.com/Daltex-616/UniDep-Pilar-Tecno" target="_blanck">
+                    <FaGithub className="profile__icon-icon" />
+                  </NavLink>
                   <NavLink to="https://unidep.onrender.com/" target="_blanck">
                     <FaArrowAltCircleRight className="profile-page__icon-icon" />
                     <span className="portafolio-page__span">
-                      Ir al proyecto
+                      Proyecto
                     </span>
                   </NavLink>
                 </div>
