@@ -10,6 +10,7 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
 .profile-page__wrapper{
     display: flex;
     flex-direction: column;
@@ -21,6 +22,7 @@
     margin: 30px 50px;
     overflow: hidden;
     border-radius: 22px;
+    box-shadow: 0px 0px 40px #fff7;
 }
 .profile-page__img{
     max-width: 100%;

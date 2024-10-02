@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import "./style.css";
 
 import UniDep from "./pages/portfolio/UniDep.jsx";
+import DigimonQuiz from "./pages/portfolio/DigimonQuiz.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path:"/UniDep",
     element:<UniDep/>
+  },
+  {
+    path:"/DigimonQuiz",
+    element:<DigimonQuiz/>
   }
 ]);
 createRoot(document.getElementById("root")).render(
