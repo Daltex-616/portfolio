@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "../public/contacto.css";
+import confetti from "canvas-confetti";
 
 export const Contacto = () => {
   const [formData, setFormData] = useState({
-    user_name: '',
-    user_lastname:'',
-    user_email: '',
-    message: ''
+    user_name: "",
+    user_lastname: "",
+    user_email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -17,71 +18,86 @@ export const Contacto = () => {
     });
   };
 
-  const handleSubmit = (e) => {  
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send('service_timrf4p', 'template_upbf359', formData, 'EbjMmhtNilolaMSDO')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('El correo se ha enviado exitosamente!');
-      }, (err) => {
-        console.log('FAILED...', err);
-        alert('Hubo un problema al enviar el correo. Inténtalo nuevamente.');
-      });
-
+    emailjs
+      .send(
+        "service_timrf4p",
+        "template_upbf359",
+        formData,
+        "EbjMmhtNilolaMSDO"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("El correo se ha enviado exitosamente!");
+        },
+        (err) => {
+          console.log("FAILED...", err);
+          alert("Hubo un problema al enviar el correo. Inténtalo nuevamente.");
+        }
+      );
+    confetti();
     setFormData({
-        user_name: '',
-        user_lastname:'',
-        user_email: '',
-        message: ''
+      user_name: "",
+      user_lastname: "",
+      user_email: "",
+      message: "",
     });
   };
 
   return (
-  
     <>
-      <section className='form'>
-        <h2 className='form__title' name="Contacto" > Contacto</h2>
-        <form className='form__form' onSubmit={handleSubmit}>
-          <div className='form__input-container'>
-            <label>Nombre
+      <section className="form">
+        <h2 className="form__title" name="Contacto">
+          {" "}
+          Contacto
+        </h2>
+        <form className="form__form" onSubmit={handleSubmit}>
+          <div className="form__input-container">
+            <label>
+              Nombre
               <input
-                type="text" 
-                name="user_name" 
-                value={formData.user_name} 
-                onChange={handleChange} 
+                type="text"
+                name="user_name"
+                value={formData.user_name}
+                onChange={handleChange}
                 required
               />
             </label>
           </div>
-          <div className='form__input-container'>
-            <label>Apellido
+          <div className="form__input-container">
+            <label>
+              Apellido
               <input
-                type="text" 
-                name="user_lastname" 
-                value={formData.user_lastname} 
-                onChange={handleChange} 
-                required
-              />
-            </label>
-          </div>
-
-          <div className='form__input-container'>
-            <label>Email
-              <input
-                type="email" 
-                name="user_email" 
-                value={formData.user_email} 
+                type="text"
+                name="user_lastname"
+                value={formData.user_lastname}
                 onChange={handleChange}
                 required
               />
             </label>
           </div>
 
-          <div className='form__input-container'>
-            <label>Mensaje
+          <div className="form__input-container">
+            <label>
+              Email
+              <input
+                type="email"
+                name="user_email"
+                value={formData.user_email}
+                onChange={handleChange}
+                required
+              />
+            </label>
+          </div>
+
+          <div className="form__input-container">
+            <label>
+              Mensaje
               <textarea
-                name="message" 
+                name="message"
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -89,11 +105,11 @@ export const Contacto = () => {
             </label>
           </div>
 
-          <div className='form__input-container'>
+          <div className="form__input-container">
             <input type="submit" value="Enviar" />
           </div>
         </form>
       </section>
     </>
   );
-}
+};

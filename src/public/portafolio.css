@@ -14,6 +14,7 @@
     font-size: 3rem;
     margin-bottom: 0;
 }
+
 .portafolio__project-container{
     display: grid;
     grid-template-columns: 1fr;
