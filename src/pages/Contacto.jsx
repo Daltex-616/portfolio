@@ -30,11 +30,9 @@ export const Contacto = () => {
       )
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
           alert("El correo se ha enviado exitosamente!");
         },
         (err) => {
-          console.log("FAILED...", err);
           alert("Hubo un problema al enviar el correo. Inténtalo nuevamente.");
         }
       );

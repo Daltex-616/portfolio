@@ -13,34 +13,18 @@ export const Portafolio = () => {
           <NavLink className="portafolio__project" to="/DigimonQuiz">
             <h2 className="portafolio__project-name">Digimon Quiz</h2>
           </NavLink>
-          <a
-            href="https://github.com/Daltex-616/backend-pilar-tecno"
-            target="_blank"
-            className="portafolio__project"
-          >
+          <NavLink className="portafolio__project" to="/backendproject">
             <h2 className="portafolio__project-name">Backend project</h2>
-          </a>
-          <a
-            href="https://github.com/Daltex-616/minimarket-front"
-            className="portafolio__project"
-            target="_blank"
-          >
+          </NavLink>
+          <NavLink className="portafolio__project" to="/MiniMarket">
             <h2 className="portafolio__project-name">MiniMarket</h2>
-          </a>
-          <a
-            href="https://github.com/Daltex-616/backendmarket"
-            target="_blakn"
-            className="portafolio__project"
-          >
+          </NavLink>
+          <NavLink className="portafolio__project" to="/backendminimarket">
             <h2 className="portafolio__project-name">Backend Minimarket</h2>
-          </a>
-          <a
-            href="https://github.com/Daltex-616/Api-tareas"
-            target="_blank"
-            className="portafolio__project"
-          >
+          </NavLink>
+          <NavLink className="portafolio__project" to="/apitareas">
             <h2 className="portafolio__project-name">Api Tareas</h2>
-          </a>
+          </NavLink>
         </div>
       </section>
     </>
