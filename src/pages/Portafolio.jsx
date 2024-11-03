@@ -13,13 +13,10 @@ export const Portafolio = () => {
           <NavLink className="portafolio__project" to="/DigimonQuiz">
             <h2 className="portafolio__project-name">Digimon Quiz</h2>
           </NavLink>
-          <a
-            href="https://github.com/Daltex-616/backend-pilar-tecno"
-            target="_blank"
-            className="portafolio__project"
-          >
-            <h2 className="portafolio__project-name">Backend project</h2>
-          </a>
+          <NavLink className="portafolio__project" to="/BackendProject">
+            <h2 className="portafolio__project-name">Backend Project</h2>
+          </NavLink>
+         
           <a
             href="https://github.com/Daltex-616/minimarket-front"
             className="portafolio__project"

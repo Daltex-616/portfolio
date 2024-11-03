@@ -45,6 +45,12 @@ export const Skills = () => {
                             </div>
                             <span className='skills__skill-name'>TypeScript</span>
                         </li>
+                        <li className='skills__skill'>
+                            <div className='load-bar'>
+                                <div className='load-bar__bar bar--20'>20%</div>
+                            </div>
+                            <span className='skills__skill-name'>Angular</span>
+                        </li>
                     </ul>
                 </div>
                 <div className='skills__skills-stack'>
@@ -85,6 +91,12 @@ export const Skills = () => {
                                 <div className='load-bar__bar bar--30'>30%</div>
                             </div>
                             <span className='skills__skill-name'>.net</span>
+                        </li>
+                        <li className='skills__skill'>
+                            <div className='load-bar'>
+                                <div className='load-bar__bar bar--60'>60%</div>
+                            </div>
+                            <span className='skills__skill-name'>Python</span>
                         </li>
                     </ul>
                 </div>

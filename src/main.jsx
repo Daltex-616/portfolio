@@ -6,6 +6,7 @@ import "./style.css";
 
 import UniDep from "./pages/portfolio/UniDep.jsx";
 import DigimonQuiz from "./pages/portfolio/DigimonQuiz.jsx";
+import BackendProject from "./pages/portfolio/BackendProject.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path:"/DigimonQuiz",
     element:<DigimonQuiz/>
+  },
+  {
+    path:"/BackendProject",
+    element:<BackendProject/>
   }
 ]);
 createRoot(document.getElementById("root")).render(
